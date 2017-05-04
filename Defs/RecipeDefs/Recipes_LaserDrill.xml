@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+	<RecipeDef>
+		<defName>LaserMiningCarbonizedWood</defName>
+		<label>mine carbonized wood</label>
+		<description>mining carbonized wood.</description>
+		<jobString>Mining carbonized wood.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<CarbonizedWood>50</CarbonizedWood>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	
+	<RecipeDef>
+		<defName>LaserMiningJade</defName>
+		<label>mine jade</label>
+		<description>mining jade.</description>
+		<jobString>Mining jade.</jobString>
+		<workAmount>650</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Jade>50</Jade>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	<RecipeDef>
+		<defName>LaserMiningUranium</defName>
+		<label>mine uranium</label>
+		<description>mining uranium.</description>
+		<jobString>Mining uranium.</jobString>
+		<workAmount>1000</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Uranium>20</Uranium>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningSilver</defName>
+		<label>mine silver</label>
+		<description>mining silver.</description>
+		<jobString>Mining silver.</jobString>
+		<workAmount>1000</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Silver>10</Silver>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningGold</defName>
+		<label>mine gold</label>
+		<description>mining gold.</description>
+		<jobString>Mining gold.</jobString>
+		<workAmount>1200</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Gold>10</Gold>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningSteel</defName>
+		<label>mine steel</label>
+		<description>mining steel.</description>
+		<jobString>Mining steel.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Steel>50</Steel>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningPlasteel</defName>
+		<label>mine plasteel</label>
+		<description>mining plasteel.</description>
+		<jobString>Mining plasteel.</jobString>
+		<workAmount>600</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Plasteel>30</Plasteel>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningDurasteel</defName>
+		<label>mine durasteel</label>
+		<description>mining durasteel.</description>
+		<jobString>Mining durasteel.</jobString>
+		<workAmount>700</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Durasteel>25</Durasteel>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	<RecipeDef>
+		<defName>LaserMiningPhytosteel</defName>
+		<label>mine phytosteel</label>
+		<description>mining phytosteel.</description>
+		<jobString>Mining phytosteel.</jobString>
+		<workAmount>800</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Phytosteel>25</Phytosteel>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningMarble</defName>
+		<label>mine marble</label>
+		<description>mining marble.</description>
+		<jobString>Mining marble.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksMarble>25</BlocksMarble>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningSlate</defName>
+		<label>mine slate</label>
+		<description>mining slate.</description>
+		<jobString>Mining slate.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksSlate>25</BlocksSlate>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	<RecipeDef>
+		<defName>LaserMiningLimestone</defName>
+		<label>mine limestone</label>
+		<description>mining limestone.</description>
+		<jobString>Mining limestone.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksLimestone>25</BlocksLimestone>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+		
+	<RecipeDef>
+		<defName>LaserMiningSandstone</defName>
+		<label>mine sandstone</label>
+		<description>mining sandstone.</description>
+		<jobString>Mining sandstone.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksSandstone>25</BlocksSandstone>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningGranite</defName>
+		<label>mine granite</label>
+		<description>mining granite.</description>
+		<jobString>Mining granite.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksGranite>25</BlocksGranite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+</RecipeDefs>

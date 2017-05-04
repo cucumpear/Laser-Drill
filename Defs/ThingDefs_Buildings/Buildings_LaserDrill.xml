@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+ <ThingDef ParentName="BenchBase">
+    <DefName>LaserDrill</DefName>
+    <label>laser drill</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A deep-crust drilling rig for extracting minerals from deep under the surface. Due to the AI processing and scanning unit, the drill can locate and extract any mineral when manned by a sufficiently skilled worker.</Description>
+    <graphicData>
+      <texPath>Things/Building/LaserDrill/LaserDrill</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costStuffCount>250</costStuffCount>
+    <CostList>
+      <Steel>750</Steel>
+      <Plasteel>250</Plasteel>
+      <Component>10</Component>
+      <AIPersonaCore>1</AIPersonaCore>
+    </CostList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>12000</WorkToBuild>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	</building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites>
+       <li>DeepDrilling</li>
+      <li>GroundPenetratingScanner</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</ThingDefs>

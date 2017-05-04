@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingNaturalBase" Abstract="True">
+    <category>Building</category>
+    <selectable>true</selectable>
+    <drawerType>MapMeshOnly</drawerType>
+    <filthLeaving>RockRubble</filthLeaving>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+	</ThingDef>
+
+
+  <ThingDef Name="RockBase" ParentName="BuildingNaturalBase" Abstract="True" >
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/Rock_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <saveCompressible>true</saveCompressible>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <mineable>true</mineable>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <isNaturalRock>true</isNaturalRock>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <deconstructible>false</deconstructible>
+    </building>
+  </ThingDef>
+
+    <!--============================ Resource rocks ===============================-->
+
+  
+    <ThingDef ParentName="RockBase">
+    <defName>MineableDurasteel</defName>
+    <label>compacted durasteel</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(91,50,86)</color>
+      <colorTwo>(133,96,136)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>12000</MaxHitPoints>
+    </statBases>
+    <description>Ancient compacted rubble rich in durasteel.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Durasteel</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>0.05</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>5</min>
+        <max>30</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+      <ThingDef ParentName="RockBase">
+    <defName>MineablePhytosteel</defName>
+    <label>compacted phytosteel</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(74,93,35)</color>
+      <colorTwo>(138,154,91)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>13500</MaxHitPoints>
+    </statBases>
+    <description>Ancient compacted rubble rich in phytosteel.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Phytosteel</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>0.05</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>7</min>
+        <max>35</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+</ThingDefs>
