@@ -380,5 +380,337 @@
 			</li>
 		</skillRequirements>
 	</RecipeDef>
+
+	
+	<RecipeDef>
+		<defName>LaserMiningBlueGranite</defName>
+		<label>mine blue granite</label>
+		<description>mining blue granite.</description>
+		<jobString>Mining granite.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksBlueGranite>25</BlocksBlueGranite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>LaserMiningPinkMarble</defName>
+		<label>mine pink marble</label>
+		<description>mining pink marble.</description>
+		<jobString>Mining pink marble.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksPinkMarble>25</BlocksPinkMarble>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>LaserMiningPhonolite</defName>
+		<label>mine phonolite</label>
+		<description>mining phonolite.</description>
+		<jobString>Mining phonolite.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksPhonolite>25</BlocksPhonolite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+		<RecipeDef>
+		<defName>LaserMiningMarl</defName>
+		<label>mine marl</label>
+		<description>mining marl.</description>
+		<jobString>Mining marl.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksMarl>25</BlocksMarl>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+		<RecipeDef>
+		<defName>LaserMiningLatite</defName>
+		<label>mine latite</label>
+		<description>mining latite.</description>
+		<jobString>Mining latite.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksLatite>25</BlocksLatite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningPorphyry</defName>
+		<label>mine porphyry</label>
+		<description>mining porphyry.</description>
+		<jobString>Mining porphyry.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksPorphyry>25</BlocksPorphyry>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	
+
+	<RecipeDef>
+		<defName>LaserMiningSylvite</defName>
+		<label>mine sylvite</label>
+		<description>mining sylvite.</description>
+		<jobString>Mining sylvite.</jobString>
+		<workAmount>650</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Sylvite>50</Sylvite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	
+	<RecipeDef>
+		<defName>LaserMiningCitrine</defName>
+		<label>mine citrine</label>
+		<description>mining citrine.</description>
+		<jobString>Mining citrine.</jobString>
+		<workAmount>650</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Citrine>50</Citrine>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	
+	<RecipeDef>
+		<defName>LaserMiningPyrolusite</defName>
+		<label>mine pyrolusite</label>
+		<description>mining pyrolusite.</description>
+		<jobString>Mining pyrolusite.</jobString>
+		<workAmount>650</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Pyrolusite>50</Pyrolusite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	
+	<RecipeDef>
+		<defName>LaserMiningLepidolite</defName>
+		<label>mine lepidolite</label>
+		<description>mining lepidolite.</description>
+		<jobString>Mining lepidolite.</jobString>
+		<workAmount>650</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Lepidolite>50</Lepidolite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	
+	<RecipeDef>
+		<defName>LaserMiningAzurite</defName>
+		<label>mine azurite</label>
+		<description>mining azurite.</description>
+		<jobString>Mining azurite.</jobString>
+		<workAmount>650</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Azurite>50</Azurite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	
+	<RecipeDef>
+		<defName>LaserMiningVivanite</defName>
+		<label>mine vivanite</label>
+		<description>mining vivanite.</description>
+		<jobString>Mining vivanite.</jobString>
+		<workAmount>650</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Vivanite>50</Vivanite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>8</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
 	
 </RecipeDefs>

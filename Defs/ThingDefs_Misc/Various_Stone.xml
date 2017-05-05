@@ -455,7 +455,7 @@
     <label>marble</label>
     <description>A soft metamorphic rock.</description>
     <graphicData>
-      <color>(255,235,255)</color>
+      <color>(252,252,247)</color>
     </graphicData>
     <statBases>
       <MaxHitPoints>450</MaxHitPoints>
@@ -473,7 +473,7 @@
     <graphicData>
       <texPath>Things/Item/Chunk/ChunkStone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
-      <color>(255,235,255)</color>
+      <color>(252,252,247)</color>
     </graphicData>
     <statBases>
       <Mass>25</Mass>
@@ -492,14 +492,14 @@
     <label>marble blocks</label>
     <description>Blocks of solid marble. Marble is a soft, beautiful stone, known for being easy to sculpt.</description>
     <graphicData>
-      <color>(255,235,255)</color>
+      <color>(252,252,247)</color>
     </graphicData>
     <statBases>
       <MarketValue>1.9</MarketValue>
       <Mass>1.25</Mass>
     </statBases>
     <stuffProps>
-      <color>(255,235,255)</color>
+      <color>(252,252,247)</color>
       <soundImpactStuff>BulletImpactGround</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
@@ -539,4 +539,542 @@
 	</RecipeDef>
 	
 
+		<!-- ================ PinkMarble ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>PinkMarble</defName>
+    <label>pink marble</label>
+    <description>A soft metamorphic rock.</description>
+    <graphicData>
+      <color>(255,235,255)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkMarble</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkPinkMarble</defName>
+    <label>pink marble chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(255,235,255)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksMarble>20</BlocksMarble>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksPinkMarble</defName>
+    <label>pink marble blocks</label>
+    <description>Blocks of solid pink marble. Marble is a soft, beautiful stone, known for being easy to sculpt.</description>
+    <graphicData>
+      <color>(255,235,255)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(255,235,255)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>pink marble</stuffAdjective>
+      <statFactors>
+        <Beauty>1.35</Beauty>
+        <MarketValue>0.45</MarketValue>
+        <MaxHitPoints>1.2</MaxHitPoints>
+				<WorkToBuild>5.5</WorkToBuild>
+				<WorkToMake>1.15</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksPinkMarble</defName>
+		<label>make pink marble blocks</label>
+		<description>Cuts marble chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkPinkMarble</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkPinkMarble</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksPinkMarble>20</BlocksPinkMarble>
+		</products>
+	</RecipeDef>
+	
+		<!-- ================ Porphyry ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>Porphyry</defName>
+    <label>porphyry</label>
+    <description>A reddish igneous rock.</description>
+    <graphicData>
+      <color>(135,60,30)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>535</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkPorphyry</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkPorphyry</defName>
+    <label>porphyry chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(135,60,30)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksMarble>20</BlocksMarble>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksPorphyry</defName>
+    <label>porphyry blocks</label>
+    <description>Blocks of solid porphyry.</description>
+    <graphicData>
+      <color>(135,60,30)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(135,60,30)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>porphyry</stuffAdjective>
+      <statFactors>
+        <Beauty>1.15</Beauty>
+        <MarketValue>0.35</MarketValue>
+        <MaxHitPoints>1.6</MaxHitPoints>
+				<WorkToBuild>5.9</WorkToBuild>
+				<WorkToMake>1.25</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksPorphyry</defName>
+		<label>make porphyry blocks</label>
+		<description>Cuts porphyry chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkPorphyry</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkPorphyry</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksPorphyry>20</BlocksPorphyry>
+		</products>
+	</RecipeDef>
+
+			<!-- ================ Latite ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>Latite</defName>
+    <label>latite</label>
+    <description>A fine-grained volcanic rock.</description>
+    <graphicData>
+      <color>(112,112,112)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkLatite</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkLatite</defName>
+    <label>latite chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(112,112,112)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksMarble>20</BlocksMarble>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksLatite</defName>
+    <label>latite blocks</label>
+    <description>Blocks of solid latite.</description>
+    <graphicData>
+      <color>(112,112,112)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(112,112,112)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>latite</stuffAdjective>
+      <statFactors>
+        <Beauty>1.15</Beauty>
+        <MarketValue>0.35</MarketValue>
+        <MaxHitPoints>1.6</MaxHitPoints>
+				<WorkToBuild>5.9</WorkToBuild>
+				<WorkToMake>1.25</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksLatite</defName>
+		<label>make latite blocks</label>
+		<description>Cuts latite chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkLatite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkLatite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksLatite>20</BlocksLatite>
+		</products>
+	</RecipeDef>
+
+				<!-- ================ Phonolite ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>Phonolite</defName>
+    <label>phonolite</label>
+    <description>A fine-grained volcanic rock.</description>
+    <graphicData>
+      <color>(97,115,67)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkPhonolite</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkPhonolite</defName>
+    <label>phonolite chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(97,115,67)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksMarble>20</BlocksMarble>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksPhonolite</defName>
+    <label>phonolite blocks</label>
+    <description>Blocks of solid phonolite.</description>
+    <graphicData>
+      <color>(97,115,67)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(97,115,67)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>phonolite</stuffAdjective>
+      <statFactors>
+        <Beauty>1.25</Beauty>
+        <MarketValue>0.4</MarketValue>
+        <MaxHitPoints>1.55</MaxHitPoints>
+				<WorkToBuild>5.9</WorkToBuild>
+				<WorkToMake>1.25</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksPhonolite</defName>
+		<label>make phonolite blocks</label>
+		<description>Cuts phonolite chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkPhonolite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkPhonolite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksPhonolite>20</BlocksPhonolite>
+		</products>
+	</RecipeDef>
+	
+	
+				<!-- ================ Marl ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>Marl</defName>
+    <label>marl</label>
+    <description>A soft type of mudstone.</description>
+    <graphicData>
+      <color>(207,192,174)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>420</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkMarl</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkMarl</defName>
+    <label>marl chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(207,192,174)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksMarble>20</BlocksMarble>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksMarl</defName>
+    <label>marl blocks</label>
+    <description>Blocks of solid marl.</description>
+    <graphicData>
+      <color>(207,192,174)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(207,192,174)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>marl</stuffAdjective>
+      <statFactors>
+        <Beauty>1</Beauty>
+        <MarketValue>0.25</MarketValue>
+        <MaxHitPoints>1.15</MaxHitPoints>
+				<WorkToBuild>5</WorkToBuild>
+				<WorkToMake>1.1</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksMarl</defName>
+		<label>make marl blocks</label>
+		<description>Cuts marl chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkMarl</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkMarl</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksMarl>20</BlocksMarl>
+		</products>
+	</RecipeDef>
+	
+			<!-- ================ Blue Granite ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>BlueGranite</defName>
+    <label>blue granite</label>
+    <description>A very hard igneous rock.</description>
+    <graphicData>
+      <color>(108,122,135)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+    </statBases>
+    <building>
+      <mineableThing>ChunkBlueGranite</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkBlueGranite</defName>
+    <label>blue granite chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(108,122,135)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksGranite>20</BlocksGranite>  
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksBlueGranite</defName>
+    <label>blue granite blocks</label>
+    <description>Blocks of solid blue granite. Granite is a very hard stone.</description>
+    <graphicData>
+      <color>(108,122,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(108,122,135)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>blue granite</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.5</MarketValue>
+        <MaxHitPoints>1.7</MaxHitPoints>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksBlueGranite</defName>
+		<label>make blue granite blocks</label>
+		<description>Cuts blue granite chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkBlueGranite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkBlueGranite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksGranite>20</BlocksGranite>
+		</products>
+	</RecipeDef>
+	
 </Defs>

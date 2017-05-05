@@ -7,7 +7,7 @@
     <label>durasteel</label>
     <description>Advanced spacer tech structural material. Durasteel is extremely strong due to its unique molecular structure.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Durasteel</texPath>
+      <texPath>Resource/Metals/Durasteel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -51,7 +51,7 @@
     <label>phytosteel</label>
     <description>Advanced spacer tech structural material. Phytosteel is extremely strong due to its unique demi-organic composition.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Phytosteel</texPath>
+      <texPath>Resource/Metals/Phytosteel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -96,7 +96,7 @@
     <label>infernium</label>
     <description>Advanced spacer tech metallic composite. Very durable and amazingly fire-resistent.</description>
     <graphicData>
-      <texPath>Resources/Infernium</texPath>
+      <texPath>Resource/Metals/Infernium</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -135,7 +135,7 @@
     <label>amoracium</label>
     <description>Advanced spacer tech metallic composite. Very durable and generally considered unusually pretty.</description>
     <graphicData>
-      <texPath>Resources/Amoracium</texPath>
+      <texPath>Resource/Metals/Amoracium</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -174,7 +174,7 @@
     <label>cerulenium</label>
     <description>Advanced spacer tech metallic composite. Exeptionally pretty and ideal for hospital rooms.</description>
     <graphicData>
-      <texPath>Resources/Cerulenium</texPath>
+      <texPath>Resource/Metals/Cerulenium</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -215,7 +215,7 @@
     <label>hypersteel</label>
     <description>Advanced spacer tech metallic composite. Sturdy due to the nanofibres but not ideal for weapons.</description>
     <graphicData>
-      <texPath>Resources/Hypersteel</texPath>
+      <texPath>Resource/Metals/Hypersteel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -248,7 +248,297 @@
       <smeltable>true</smeltable>
     </stuffProps>
   </ThingDef>
+ 
+    <!--=============== Sylvite ====================-->
+ 
+ 
+  <ThingDef ParentName="ResourceBase">
+    <defName>Sylvite</defName>
+    <label>sylvite</label>
+    <description>A pretty yellow mineral.</description>
+    <graphicData>
+      <texPath>Resource/Gems/Sylvite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<useHitPoints>false</useHitPoints>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.5</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(250,249,217)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <WorkToMake>1.4</WorkToMake>
+				<WorkToBuild>5.0</WorkToBuild>
+				<Beauty>2.5</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+     <!--=============== Citrine ====================-->
+ 
+ 
+  <ThingDef ParentName="ResourceBase">
+    <defName>Citrine</defName>
+    <label>citrine</label>
+    <description>A orange coloured gem.</description>
+    <graphicData>
+      <texPath>Resource/Gems/Citrine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<useHitPoints>false</useHitPoints>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.5</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(230,170,90)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <WorkToMake>1.4</WorkToMake>
+				<WorkToBuild>5.0</WorkToBuild>
+				<Beauty>2.5</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
   
+      <!--=============== Pyrolusite ====================-->
+ 
+  <ThingDef ParentName="ResourceBase">
+    <defName>Pyrolusite</defName>
+    <label>pyrolusite</label>
+    <description>A dark, almost black stone.</description>
+    <graphicData>
+      <texPath>Resource/Gems/Pyrolusite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<useHitPoints>false</useHitPoints>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.5</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(45,45,45)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <WorkToMake>1.4</WorkToMake>
+				<WorkToBuild>5.0</WorkToBuild>
+				<Beauty>2.5</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+       <!--=============== Lepidolite ====================-->
+ 
+  <ThingDef ParentName="ResourceBase">
+    <defName>Lepidolite</defName>
+    <label>lepidolite</label>
+    <description>A pale lilac stone.</description>
+    <graphicData>
+      <texPath>Resource/Gems/Lepidolite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<useHitPoints>false</useHitPoints>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.5</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(194,171,209)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <WorkToMake>1.4</WorkToMake>
+				<WorkToBuild>5.0</WorkToBuild>
+				<Beauty>2.5</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+         <!--=============== Azurite ====================-->
+ 
+  <ThingDef ParentName="ResourceBase">
+    <defName>Azurite</defName>
+    <label>azurite</label>
+    <description>A deep blue stone.</description>
+    <graphicData>
+      <texPath>Resource/Gems/Azurite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<useHitPoints>false</useHitPoints>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.5</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(35,47,77)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <WorkToMake>1.4</WorkToMake>
+				<WorkToBuild>5.0</WorkToBuild>
+				<Beauty>2.5</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+   
+         <!--=============== Vivanite ====================-->
+ 
+  <ThingDef ParentName="ResourceBase">
+    <defName>Vivanite</defName>
+    <label>vivanite</label>
+    <description>A pretty blue green stone.</description>
+    <graphicData>
+      <texPath>Resource/Gems/Vivanite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<useHitPoints>false</useHitPoints>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.5</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(84,112,109)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <WorkToMake>1.4</WorkToMake>
+				<WorkToBuild>5.0</WorkToBuild>
+				<Beauty>2.5</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
   
     <!--=============== CarbonizedWood ====================-->
 
@@ -440,7 +730,7 @@
   
    <ThingDef ParentName="ResourceVerbBase" Name="TintedWoodBase" Abstract="True">
     <graphicData>
-      <texPath>Things/Item/Resource/TintedWood</texPath>
+      <texPath>Resource/TintedWood</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -819,7 +1109,7 @@
     <label>synthleather</label>
     <description>Spacer-tech synthetic leather designed for making ordinary clothes. It is strong, and insulates well.</description>
     <graphicData>
-      <texPath>Resources/SynthLeather</texPath>
+      <texPath>Resource/SynthLeather</texPath>
 	  <color>(0,64,77)</color>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
