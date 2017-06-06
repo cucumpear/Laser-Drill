@@ -19,7 +19,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Durasteel</li>
+            <li>Viosteel</li>
           </thingDefs>
         </filter>
         <count>15</count>
@@ -38,7 +38,7 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Durasteel</li>
+        <li>Viosteel</li>
         <li>DevilstrandCloth</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -69,7 +69,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Durasteel</li>
+            <li>Viosteel</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -81,7 +81,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Plasteel</li>
-        <li>Durasteel</li>
+        <li>Viosteel</li>
       </thingDefs>
     </fixedIngredientFilter>
 	<researchPrerequisite>Refining</researchPrerequisite>

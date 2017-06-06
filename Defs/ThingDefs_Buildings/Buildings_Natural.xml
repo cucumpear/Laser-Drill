@@ -49,8 +49,8 @@
 
   
     <ThingDef ParentName="RockBase">
-    <defName>MineableDurasteel</defName>
-    <label>compacted durasteel</label>
+    <defName>MineableViosteel</defName>
+    <label>compacted viosteel</label>
     <graphicData>
       <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -61,10 +61,10 @@
     <statBases>
       <MaxHitPoints>12000</MaxHitPoints>
     </statBases>
-    <description>Ancient compacted rubble rich in durasteel.</description>
+    <description>Ancient compacted rubble rich in viosteel.</description>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>Durasteel</mineableThing>
+      <mineableThing>Viosteel</mineableThing>
       <mineableYield>35</mineableYield>
       <mineableScatterCommonality>0.05</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>
@@ -96,203 +96,6 @@
       <mineableScatterLumpSizeRange>
         <min>7</min>
         <max>35</max>
-      </mineableScatterLumpSizeRange>
-    </building>
-  </ThingDef>
-  
-  <!-- Sylvite -->
-  
-  <ThingDef ParentName="RockBase">
-    <defName>MineableSylvite</defName>
-    <label>sylvite</label>
-    <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(68,83,68)</color>
-      <colorTwo>(30,173,25)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of sylvite.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Sylvite</mineableThing>
-      <mineableYield>35</mineableYield>
-      <mineableScatterCommonality>0.065</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>
-        <min>1</min>
-        <max>6</max>
-      </mineableScatterLumpSizeRange>
-    </building>
-  </ThingDef>
-  
-    <!-- Sylvite -->
-  
-  <ThingDef ParentName="RockBase">
-    <defName>MineableSylvite</defName>
-    <label>sylvite</label>
-    <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(194,182,155)</color>
-      <colorTwo>(250,249,217)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of sylvite.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Sylvite</mineableThing>
-      <mineableYield>35</mineableYield>
-      <mineableScatterCommonality>0.065</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>
-        <min>1</min>
-        <max>6</max>
-      </mineableScatterLumpSizeRange>
-    </building>
-  </ThingDef>
-
-    
-    <!-- Citrine -->
-  
-  <ThingDef ParentName="RockBase">
-    <defName>MineableCitrine</defName>
-    <label>citrine</label>
-    <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(171,133,82)</color>
-      <colorTwo>(230,170,90)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of citrine.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Citrine</mineableThing>
-      <mineableYield>35</mineableYield>
-      <mineableScatterCommonality>0.065</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>
-        <min>1</min>
-        <max>6</max>
-      </mineableScatterLumpSizeRange>
-    </building>
-  </ThingDef>
-  
-     <!-- Pyrolusite -->
-  
-  <ThingDef ParentName="RockBase">
-    <defName>MineablePyrolusite</defName>
-    <label>pyrolusite</label>
-    <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(35,35,35)</color>
-      <colorTwo>(45,45,45)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of pyrolusite.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Pyrolusite</mineableThing>
-      <mineableYield>35</mineableYield>
-      <mineableScatterCommonality>0.065</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>
-        <min>1</min>
-        <max>6</max>
-      </mineableScatterLumpSizeRange>
-    </building>
-  </ThingDef>
-  
-      <!-- Lepidolite -->
-  
-  <ThingDef ParentName="RockBase">
-    <defName>MineableLepidolite</defName>
-    <label>lepidolite</label>
-    <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(136,118,148)</color>
-      <colorTwo>(194,171,209)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of lepidolite.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Lepidolite</mineableThing>
-      <mineableYield>35</mineableYield>
-      <mineableScatterCommonality>0.065</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>
-        <min>1</min>
-        <max>6</max>
-      </mineableScatterLumpSizeRange>
-    </building>
-  </ThingDef>
- 
-       <!-- Azurite -->
-  
-  <ThingDef ParentName="RockBase">
-    <defName>MineableAzurite</defName>
-    <label>azurite</label>
-    <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(40,45,59)</color>
-      <colorTwo>(35,47,77)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of azurite.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Azurite</mineableThing>
-      <mineableYield>35</mineableYield>
-      <mineableScatterCommonality>0.065</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>
-        <min>1</min>
-        <max>6</max>
-      </mineableScatterLumpSizeRange>
-    </building>
-  </ThingDef>
-  
-        <!-- Azurite -->
-  
-  <ThingDef ParentName="RockBase">
-    <defName>MineableVivanite</defName>
-    <label>vivanite</label>
-    <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(59,74,72)</color>
-      <colorTwo>(84,112,109)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of vivanite.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Vivanite</mineableThing>
-      <mineableYield>35</mineableYield>
-      <mineableScatterCommonality>0.065</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>
-        <min>1</min>
-        <max>6</max>
       </mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
