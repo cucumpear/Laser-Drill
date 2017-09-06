@@ -5,7 +5,7 @@
       <defName>Composites</defName>
       <label>composite materials</label>
       <parent>ResourcesRaw</parent>
-      <iconPath>UI/Icons/ThingCategories/StoneBlocks</iconPath>
+      <iconPath>UI/Icons/ThingCategories/Composites</iconPath>
       <resourceReadoutRoot>true</resourceReadoutRoot>
     </ThingCategoryDef>
 

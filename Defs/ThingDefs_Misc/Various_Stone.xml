@@ -75,27 +75,6 @@
     </statBases>
   </ThingDef>
 
-  <!-- =========== Misc chunks =========== -->
-  
-  <ThingDef ParentName="ChunkBase">
-    <defName>ChunkSlagSteel</defName>
-    <label>steel slag chunk</label>
-    <graphicData>
-      <texPath>Things/Item/Chunk/ChunkSlag</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-    <statBases>
-      <Mass>5</Mass>
-    </statBases>
-    <soundDrop>ChunkSlag_Drop</soundDrop>
-    <thingCategories>
-      <li>Chunks</li>
-    </thingCategories>
-    <smeltProducts>
-      <Steel>10</Steel>
-    </smeltProducts>
-  </ThingDef>
-
   <!-- ================ Sandstone ================ -->
   
   <ThingDef ParentName="UglyRockBase">
@@ -455,7 +434,7 @@
     <label>marble</label>
     <description>A soft metamorphic rock.</description>
     <graphicData>
-      <color>(252,252,247)</color>
+      <color>(250,250,250)</color>
     </graphicData>
     <statBases>
       <MaxHitPoints>450</MaxHitPoints>
@@ -473,7 +452,7 @@
     <graphicData>
       <texPath>Things/Item/Chunk/ChunkStone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
-      <color>(252,252,247)</color>
+      <color>(250,250,250)</color>
     </graphicData>
     <statBases>
       <Mass>25</Mass>
@@ -492,14 +471,14 @@
     <label>marble blocks</label>
     <description>Blocks of solid marble. Marble is a soft, beautiful stone, known for being easy to sculpt.</description>
     <graphicData>
-      <color>(252,252,247)</color>
+      <color>(250,250,250)</color>
     </graphicData>
     <statBases>
       <MarketValue>1.9</MarketValue>
       <Mass>1.25</Mass>
     </statBases>
     <stuffProps>
-      <color>(252,252,247)</color>
+      <color>(250,250,250)</color>
       <soundImpactStuff>BulletImpactGround</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
@@ -713,6 +692,366 @@
 		</fixedIngredientFilter>
 		<products>
 			<BlocksBlueGranite>20</BlocksBlueGranite>
+		</products>
+	</RecipeDef>
+
+		<!-- ================ GreenMarble ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>GreenMarble</defName>
+    <label>green marble</label>
+    <description>A soft metamorphic rock.</description>
+    <graphicData>
+      <color>(130,145,110)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkGreenMarble</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkGreenMarble</defName>
+    <label>green marble chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(130,145,110)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksGreenMarble>20</BlocksGreenMarble>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksGreenMarble</defName>
+    <label>green marble blocks</label>
+    <description>Blocks of solid green marble. Marble is a soft, beautiful stone, known for being easy to sculpt.</description>
+    <graphicData>
+      <color>(130,145,110)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(130,145,110)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>green marble</stuffAdjective>
+      <statFactors>
+        <Beauty>1.35</Beauty>
+        <MarketValue>0.45</MarketValue>
+        <MaxHitPoints>1.2</MaxHitPoints>
+				<WorkToBuild>5.5</WorkToBuild>
+				<WorkToMake>1.15</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksGreenMarble</defName>
+		<label>make green marble blocks</label>
+		<description>Cuts marble chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGreenMarble</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkGreenMarble</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksGreenMarble>20</BlocksGreenMarble>
+		</products>
+	</RecipeDef>
+
+		<!-- ================ BlackShale ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>BlackShale</defName>
+    <label>black shale</label>
+    <description>A soft sedimentary rock.</description>
+    <graphicData>
+      <color>(35,35,35)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkBlackShale</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkBlackShale</defName>
+    <label>black shale chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(35,35,35)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksBlackShale>20</BlocksBlackShale>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksBlackShale</defName>
+    <label>black shale blocks</label>
+    <description>Blocks of solid black shale. Shale is a soft sedimantary stone, very easy to work with.</description>
+    <graphicData>
+      <color>(35,35,35)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(35,35,35)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>black shale</stuffAdjective>
+      <statFactors>
+        <Beauty>0.85</Beauty>
+        <MarketValue>0.3</MarketValue>
+        <MaxHitPoints>1</MaxHitPoints>
+				<WorkToBuild>3.5</WorkToBuild>
+				<WorkToMake>1</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksBlackShale</defName>
+		<label>make black shale blocks</label>
+		<description>Cuts shale chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkBlackShale</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkBlackShale</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksBlackShale>20</BlocksBlackShale>
+		</products>
+	</RecipeDef>
+
+		<!-- ================ RedShale ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>RedShale</defName>
+    <label>red shale</label>
+    <description>A soft sedimentary rock.</description>
+    <graphicData>
+      <color>(90,40,20)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkRedShale</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkRedShale</defName>
+    <label>red shale chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(90,40,20)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksRedShale>20</BlocksRedShale>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksRedShale</defName>
+    <label>red shale blocks</label>
+    <description>Blocks of solid red shale. Shale is a soft sedimantary stone, very easy to work with.</description>
+    <graphicData>
+      <color>(90,40,20)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(90,40,20)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>red shale</stuffAdjective>
+      <statFactors>
+        <Beauty>0.85</Beauty>
+        <MarketValue>0.3</MarketValue>
+        <MaxHitPoints>1</MaxHitPoints>
+				<WorkToBuild>3.5</WorkToBuild>
+				<WorkToMake>1</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksRedShale</defName>
+		<label>make red shale blocks</label>
+		<description>Cuts shale chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkRedShale</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkRedShale</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksRedShale>20</BlocksRedShale>
+		</products>
+	</RecipeDef>
+
+		<!-- ================ BrownShale ================ -->
+
+	<ThingDef ParentName="UglyRockBase">
+    <defName>BrownShale</defName>
+    <label>brown shale</label>
+    <description>A soft sedimentary rock.</description>
+    <graphicData>
+      <color>(115,100,75)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>ChunkBrownShale</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>ChunkBrownShale</defName>
+    <label>brown shale chunk</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(115,100,75)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <butcherProducts>
+      <BlocksBrownShale>20</BlocksBrownShale>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksBrownShale</defName>
+    <label>brown shale blocks</label>
+    <description>Blocks of solid brown shale. Shale is a soft sedimantary stone, very easy to work with.</description>
+    <graphicData>
+      <color>(115,100,75)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(115,100,75)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>brown shale</stuffAdjective>
+      <statFactors>
+        <Beauty>0.85</Beauty>
+        <MarketValue>0.3</MarketValue>
+        <MaxHitPoints>1</MaxHitPoints>
+				<WorkToBuild>3.5</WorkToBuild>
+				<WorkToMake>1</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>MakeStoneBlocksBrownShale</defName>
+		<label>make brown shale blocks</label>
+		<description>Cuts shale chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkBrownShale</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkBrownShale</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksBrownShale>20</BlocksBrownShale>
 		</products>
 	</RecipeDef>
 	

@@ -436,4 +436,112 @@
 		</skillRequirements>
 	</RecipeDef>
 
+	<RecipeDef>
+		<defName>LaserMiningGreenMarble</defName>
+		<label>mine green marble</label>
+		<description>mining green marble.</description>
+		<jobString>Mining green marble.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksGreenMarble>25</BlocksGreenMarble>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningBlackShale</defName>
+		<label>mine black shale</label>
+		<description>mining black shale.</description>
+		<jobString>Mining black shale.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksBlackShale>25</BlocksBlackShale>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>LaserMiningRedShale</defName>
+		<label>mine red shale</label>
+		<description>mining red shale.</description>
+		<jobString>Mining red shale.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksRedShale>25</BlocksRedShale>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>LaserMiningBrownShale</defName>
+		<label>mine brown shale</label>
+		<description>mining brown shale.</description>
+		<jobString>Mining brown shale.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksBrownShale>25</BlocksBrownShale>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>LaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Mining</skill>
+				<minLevel>5</minLevel>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>2</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
 </RecipeDefs>
