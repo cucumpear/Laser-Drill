@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
  <ThingDef ParentName="BenchBase">
-    <DefName>LaserDrill</DefName>
-    <label>laser drill</label>
-    <ThingClass>Building_WorkTable</ThingClass>
-    <Description>A deep-crust drilling rig for extracting minerals from deep under the surface. Due to the AI processing and scanning unit, the drill can locate and extract any mineral when manned by a sufficiently skilled worker.</Description>
+    <defName>CCPLaserDrill</defName>
+    <label>computerised laser drill</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A deep-crust triple laser drilling rig for extracting minerals from deep under the surface, even though ice. Due to the AI processing and scanning unit, the drill can locate and extract any mineral when manned by a sufficiently skilled worker.</description>
     <graphicData>
       <texPath>Things/Building/LaserDrill/LaserDrill</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.5,1.5)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(7,3.5)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -17,29 +18,29 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <costStuffCount>250</costStuffCount>
-    <CostList>
-      <Steel>750</Steel>
-      <Plasteel>250</Plasteel>
-      <Component>10</Component>
+    <costStuffCount>450</costStuffCount>
+    <costList>
+      <Steel>1500</Steel>
+      <Plasteel>600</Plasteel>
+      <Component>25</Component>
       <AIPersonaCore>1</AIPersonaCore>
-    </CostList>
+    </costList>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <AltitudeLayer>Building</AltitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>12000</WorkToBuild>
-      <MaxHitPoints>350</MaxHitPoints>
-      <Flammability>1.0</Flammability>
+      <WorkToBuild>25000</WorkToBuild>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Flammability>0.1</Flammability>
     </statBases>
-    <Size>(3,1)</Size>
-    <DesignationCategory>Production</DesignationCategory>
-    <Passability>PassThroughOnly</Passability>
+    <size>(5,2)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -54,15 +55,15 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <startElectricalFires>true</startElectricalFires>
-        <basePowerConsumption>1500</basePowerConsumption>
+        <basePowerConsumption>2500</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <researchPrerequisites>
        <li>DeepDrilling</li>
-      <li>GroundPenetratingScanner</li>
+       <li>GroundPenetratingScanner</li>
     </researchPrerequisites>
   </ThingDef>
 
-</ThingDefs>
+</Defs>

@@ -38,8 +38,8 @@
         <Beauty>1.3</Beauty>
         <Flammability>0.1</Flammability>
         <WorkToMake>2.3</WorkToMake>
-				<WorkToBuild>2.3</WorkToBuild>
-        <MeleeWeapon_Cooldown>0.75</MeleeWeapon_Cooldown>
+		<WorkToBuild>2.3</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
       </statFactors>
       <smeltable>true</smeltable>
     </stuffProps>
@@ -82,8 +82,8 @@
         <Beauty>1.3</Beauty>
         <Flammability>0.1</Flammability>
         <WorkToMake>2.3</WorkToMake>
-				<WorkToBuild>2.3</WorkToBuild>
-        <MeleeWeapon_Cooldown>0.75</MeleeWeapon_Cooldown>
+		<WorkToBuild>2.3</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
       </statFactors>
       <smeltable>true</smeltable>
     </stuffProps>
@@ -124,8 +124,8 @@
         <Beauty>1.15</Beauty>
         <Flammability>0.01</Flammability>
         <WorkToMake>2.2</WorkToMake>
-				<WorkToBuild>2.2</WorkToBuild>
-        <MeleeWeapon_Cooldown>0.75</MeleeWeapon_Cooldown>
+		<WorkToBuild>2.2</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
       </statFactors>
       <smeltable>true</smeltable>
     </stuffProps>
@@ -164,8 +164,8 @@
         <Beauty>5</Beauty>
         <Flammability>0.1</Flammability>
         <WorkToMake>2.2</WorkToMake>
-				<WorkToBuild>2.2</WorkToBuild>
-        <MeleeWeapon_Cooldown>0.85</MeleeWeapon_Cooldown>
+		<WorkToBuild>2.2</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
       </statFactors>
       <smeltable>true</smeltable>
     </stuffProps>
@@ -206,8 +206,8 @@
         <Beauty>7</Beauty>
         <Flammability>0.01</Flammability>
         <WorkToMake>2.4</WorkToMake>
-				<WorkToBuild>2.4</WorkToBuild>
-        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+		<WorkToBuild>2.4</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
       </statFactors>
       <smeltable>true</smeltable>
     </stuffProps>
@@ -246,8 +246,8 @@
         <Beauty>1.5</Beauty>
         <Flammability>0.01</Flammability>
         <WorkToMake>2.8</WorkToMake>
-				<WorkToBuild>2.8</WorkToBuild>
-        <MeleeWeapon_Cooldown>1.3</MeleeWeapon_Cooldown>
+		<WorkToBuild>2.8</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
       </statFactors>
       <smeltable>true</smeltable>
     </stuffProps>
@@ -273,8 +273,6 @@
       <Mass>2</Mass>
       <Flammability>0.6</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
-      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
       <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
     </statBases>
@@ -298,9 +296,9 @@
         <Beauty>6</Beauty>
         <Flammability>1</Flammability>
         <WorkToMake>1</WorkToMake>
-				<WorkToBuild>1</WorkToBuild>
+		<WorkToBuild>1</WorkToBuild>
         <DoorOpenSpeed>1.2</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+        <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
     <isBodyPartOrImplant>true</isBodyPartOrImplant>
@@ -310,13 +308,15 @@
     <techHediffsTags>
       <li>Poor</li>
     </techHediffsTags>
-    <verbs>
+    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.2</cooldownTime>
       </li>
-    </verbs>
+    </tools>
   </ThingDef>
 
   
@@ -339,8 +339,6 @@
       <MarketValue>1.9</MarketValue>
       <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0.2</Flammability>
-      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
       <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
     </statBases>
@@ -362,8 +360,9 @@
         <Beauty>0</Beauty>
         <Flammability>0.2</Flammability>
         <WorkToMake>1.2</WorkToMake>
-				<WorkToBuild>1.2</WorkToBuild>
+		<WorkToBuild>1.2</WorkToBuild>
         <DoorOpenSpeed>1.2</DoorOpenSpeed>
+      <MeleeWeapon_CooldownMultiplier>2.2</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
     <isBodyPartOrImplant>true</isBodyPartOrImplant>
@@ -373,13 +372,15 @@
     <techHediffsTags>
       <li>Poor</li>
     </techHediffsTags>
-    <verbs>
+    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.2</cooldownTime>
       </li>
-    </verbs>
+    </tools>
 </ThingDef>
 
   
@@ -399,8 +400,6 @@
       <MarketValue>6</MarketValue>
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0.1</Flammability>
-      <MeleeWeapon_DamageAmount>1</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
       <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
     </statBases>
@@ -422,8 +421,9 @@
         <Beauty>2</Beauty>
         <Flammability>0.1</Flammability>
         <WorkToMake>1.5</WorkToMake>
-				<WorkToBuild>1.5</WorkToBuild>
+		<WorkToBuild>1.5</WorkToBuild>
 		<DoorOpenSpeed>1.2</DoorOpenSpeed>
+      <MeleeWeapon_CooldownMultiplier>2.2</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
     <isBodyPartOrImplant>true</isBodyPartOrImplant>
@@ -433,13 +433,15 @@
     <techHediffsTags>
       <li>Poor</li>
     </techHediffsTags>
-    <verbs>
+    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.2</cooldownTime>
       </li>
-    </verbs>
+    </tools>
 </ThingDef>
   
   
@@ -455,8 +457,6 @@
       <MarketValue>7</MarketValue>
       <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0.1</Flammability>
-      <MeleeWeapon_DamageAmount>1</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
       <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
     </statBases>
@@ -477,8 +477,9 @@
         <Beauty>2</Beauty>
         <Flammability>0.1</Flammability>
         <WorkToMake>1.5</WorkToMake>
-				<WorkToBuild>1.5</WorkToBuild>
+		<WorkToBuild>1.5</WorkToBuild>
         <DoorOpenSpeed>1.2</DoorOpenSpeed>
+      <MeleeWeapon_CooldownMultiplier>2.2</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
     <isBodyPartOrImplant>true</isBodyPartOrImplant>
@@ -488,13 +489,15 @@
     <techHediffsTags>
       <li>Poor</li>
     </techHediffsTags>
-    <verbs>
+    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.2</cooldownTime>
       </li>
-    </verbs>
+    </tools>
 </ThingDef>
   
   
@@ -628,10 +631,10 @@
         <MaxHitPoints>2.7</MaxHitPoints>
         <Flammability>0.1</Flammability>
         <WorkToMake>4.8</WorkToMake>
-				<WorkToBuild>4.8</WorkToBuild>
+		<WorkToBuild>4.8</WorkToBuild>
         <DoorOpenSpeed>0.85</DoorOpenSpeed>
         <BedRestEffectiveness>1</BedRestEffectiveness>
-        <MeleeWeapon_Cooldown>1.2</MeleeWeapon_Cooldown>
+        <MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
   </ThingDef>
@@ -754,10 +757,10 @@
         <MaxHitPoints>10</MaxHitPoints>
         <Flammability>0</Flammability>
         <WorkToMake>5</WorkToMake>
-				<WorkToBuild>5</WorkToBuild>
+		<WorkToBuild>5</WorkToBuild>
         <DoorOpenSpeed>1</DoorOpenSpeed>
         <BedRestEffectiveness>1</BedRestEffectiveness>
-        <MeleeWeapon_Cooldown>1.2</MeleeWeapon_Cooldown>
+        <MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
       </statFactors>
 	  <color>(46,52,56)</color>
       <soundImpactStuff>BulletImpactGround</soundImpactStuff>
@@ -806,10 +809,10 @@
         <MaxHitPoints>2</MaxHitPoints>
         <Flammability>0</Flammability>
         <WorkToMake>5</WorkToMake>
-				<WorkToBuild>5</WorkToBuild>
+		<WorkToBuild>5</WorkToBuild>
         <DoorOpenSpeed>1</DoorOpenSpeed>
         <BedRestEffectiveness>1.2</BedRestEffectiveness>
-        <MeleeWeapon_Cooldown>1.2</MeleeWeapon_Cooldown>
+        <MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
       </statFactors>
 	  <color>(230,251,255)</color>
       <soundImpactStuff>BulletImpactGround</soundImpactStuff>
