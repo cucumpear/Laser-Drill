@@ -65,6 +65,27 @@
 				<Crafting>9</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
+
+	<RecipeDef>
+		<defName>LaserMiningComponents</defName>
+		<label>drill for components</label>
+		<description>drilling for components.</description>
+		<jobString>Drilling for components.</jobString>
+		<workAmount>950</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Component>7</Component>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CCPLaserDrill</li>
+		</recipeUsers>
+		<skillRequirements>
+				<Mining>10</Mining>
+				<Crafting>9</Crafting>
+		</skillRequirements>
+	</RecipeDef>
 	
 	<RecipeDef>
 		<defName>LaserMiningUranium</defName>
@@ -381,68 +402,5 @@
 				<Crafting>7</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
-	<RecipeDef>
-		<defName>LaserMiningBlackShale</defName>
-		<label>mine black shale</label>
-		<description>mining black shale.</description>
-		<jobString>Mining black shale.</jobString>
-		<workAmount>850</workAmount>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
-		<products>
-			<BlocksBlackShale>25</BlocksBlackShale>
-		</products>
-		<workSkill>Mining</workSkill>
-		<recipeUsers>
-			<li>CCPLaserDrill</li>
-		</recipeUsers>
-		<skillRequirements>
-				<Mining>9</Mining>
-				<Crafting>7</Crafting>
-		</skillRequirements>
-	</RecipeDef>
-	
-	<RecipeDef>
-		<defName>LaserMiningRedShale</defName>
-		<label>mine red shale</label>
-		<description>mining red shale.</description>
-		<jobString>Mining red shale.</jobString>
-		<workAmount>850</workAmount>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
-		<products>
-			<BlocksRedShale>25</BlocksRedShale>
-		</products>
-		<workSkill>Mining</workSkill>
-		<recipeUsers>
-			<li>CCPLaserDrill</li>
-		</recipeUsers>
-		<skillRequirements>
-				<Mining>9</Mining>
-				<Crafting>7</Crafting>
-		</skillRequirements>
-	</RecipeDef>
 
-	<RecipeDef>
-		<defName>LaserMiningBrownShale</defName>
-		<label>mine brown shale</label>
-		<description>mining brown shale.</description>
-		<jobString>Mining brown shale.</jobString>
-		<workAmount>850</workAmount>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
-		<products>
-			<BlocksBrownShale>25</BlocksBrownShale>
-		</products>
-		<workSkill>Mining</workSkill>
-		<recipeUsers>
-			<li>CCPLaserDrill</li>
-		</recipeUsers>
-		<skillRequirements>
-				<Mining>9</Mining>
-				<Crafting>7</Crafting>
-		</skillRequirements>
-	</RecipeDef>
-	
 </Defs>

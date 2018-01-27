@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "Sandstone"]/graphicData/color</xpath>
+	  <value><color>(87,71,63)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "ChunkSandstone"]/graphicData/color</xpath>
+	  <value><color>(87,71,63)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksSandstone"]/graphicData/color</xpath>
+	  <value><color>(87,71,63)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksSandstone"]/stuffProps/color</xpath>
+	  <value><color>(87,71,63)</color></value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "Granite"]/graphicData/color</xpath>
+	  <value><color>(75,84,92)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "ChunkGranite"]/graphicData/color</xpath>
+	  <value><color>(75,84,92)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksGranite"]/graphicData/color</xpath>
+	  <value><color>(75,84,92)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksGranite"]/stuffProps/color</xpath>
+	  <value><color>(75,84,92)</color></value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "Limestone"]/graphicData/color</xpath>
+	  <value><color>(232,225,202)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "ChunkLimestone"]/graphicData/color</xpath>
+	  <value><color>(232,225,202)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksLimestone"]/graphicData/color</xpath>
+	  <value><color>(232,225,202)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksLimestone"]/stuffProps/color</xpath>
+	  <value><color>(232,225,202)</color></value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "Slate"]/graphicData/color</xpath>
+	  <value><color>(64,64,64)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "ChunkSlate"]/graphicData/color</xpath>
+	  <value><color>(64,64,64)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksSlate"]/graphicData/color</xpath>
+	  <value><color>(64,64,64)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksSlate"]/stuffProps/color</xpath>
+	  <value><color>(64,64,64)</color></value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "Marble"]/graphicData/color</xpath>
+	  <value><color>(255,255,255)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "ChunkMarble"]/graphicData/color</xpath>
+	  <value><color>(255,255,255)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksMarble"]/graphicData/color</xpath>
+	  <value><color>(255,255,255)</color></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/ThingDef[defName = "BlocksMarble"]/stuffProps/color</xpath>
+	  <value><color>(255,255,255)</color></value>
+	</Operation>
+	
+</Patch>
