@@ -22,7 +22,7 @@
     <costList>
       <Steel>1500</Steel>
       <Plasteel>600</Plasteel>
-      <Component>25</Component>
+      <ComponentIndustrial>25</ComponentIndustrial>
       <AIPersonaCore>1</AIPersonaCore>
     </costList>
     <stuffCategories>
@@ -54,11 +54,14 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>true</startElectricalFires>
+        <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>2500</basePowerConsumption>
       </li>
+      <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_DeepDrill" />
+      <li Class="CompProperties_CreatesInfestations" />
     </comps>
     <researchPrerequisites>
        <li>DeepDrilling</li>

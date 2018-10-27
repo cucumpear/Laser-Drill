@@ -75,7 +75,7 @@
 		<effectWorking>CutStone</effectWorking>
 		<workSkillLearnFactor>0.2</workSkillLearnFactor>
 		<products>
-			<Component>7</Component>
+			<ComponentIndustrial>7</ComponentIndustrial>
 		</products>
 		<workSkill>Mining</workSkill>
 		<recipeUsers>
